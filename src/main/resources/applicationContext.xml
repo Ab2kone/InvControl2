@@ -6,7 +6,8 @@
     <bean id="doa" class="ext.DaoImplVWS"></bean>
 
     <bean id="metier" class="metier.IMetierImpl">
-        <property name="dao" ref="doa"></property>
+<!--        <property name="dao" ref="doa"></property>-->
+        <constructor-arg ref="doa"></constructor-arg>
     </bean>
 
 </beans>
