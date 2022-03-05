@@ -15,8 +15,8 @@ public class Presentation {
 
         DaoImpl dao = new DaoImpl();
 
-        IMetierImpl metier = new IMetierImpl();
-        metier.setDao(dao);
+        IMetierImpl metier = new IMetierImpl(dao);
+//        metier.setDao(dao);
         System.out.println("Résultat = "+metier.calcul());
 
         DaoImpl2 daoImpl2 = new DaoImpl2();

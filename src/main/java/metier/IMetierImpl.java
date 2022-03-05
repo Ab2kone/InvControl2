@@ -16,6 +16,13 @@ public class IMetierImpl implements IMetier {
         return res;
     }
 
+
+    public IMetierImpl(IDao dao){
+        this.dao = dao;
+    }
+
+
+
     /**
      * Injecter dans la variable Dao un objet
      * d'une classe qui implemente l'iterface IDao
